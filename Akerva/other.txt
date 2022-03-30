@@ -1,0 +1,17 @@
+[+] Looking Cloud-Init conf file
+Found readable /etc/cloud/cloud.cfg
+     lock_passwd: True
+     groups: [adm, audio, cdrom, dialout, dip, floppy, lxd, netdev, plugdev, sudo, video]
+     sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+
+Reading /etc/apache2/.htpasswd
+aas:$apr1$a1aqCzW8$hsRSvlom8SfX/R5Dql4CZ0
+
+[+] Looking for Wordpress wp-config.php files
+wp-config.php files found:\n/var/www/html/wp-config.php
+define( 'DB_NAME', 'wordpress' );
+define( 'DB_USER', 'wordpress' );
+define( 'DB_PASSWORD', 'ZokDHE_DJ_____enzU)=' );
+define( 'DB_HOST', 'localhost' );
+
+
