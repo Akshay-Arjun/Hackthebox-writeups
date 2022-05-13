@@ -1,6 +1,6 @@
 IP : 10.10.11.136
-Found the domain from emails panda.htb
-Added them to hosts file.
+</br> Found the domain from emails listed on website - panda.htb
+</br> Added them to hosts file.
 
 # NMAP SCANNING
 ## Basic Scan
@@ -152,7 +152,7 @@ https://127.0.0.1/pandora_console/include/chart_generator.php?session_id=%27%20u
 ### and now visit ``` https://127.0.0.1/padora_console``` in the same tab.
 
 ## Uploading reverse shell
-### Uploading reverse shell https://github.com/pentestmonkey/php-reverse-shell and starting the listener to get shell session .
+### Uploading reverse shell https://github.com/pentestmonkey/php-reverse-shell (change the ip and port to our ip and required port) and starting the listener to get shell session .
 
 # Userflag.txt
 ``` 
