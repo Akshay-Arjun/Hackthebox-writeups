@@ -100,7 +100,7 @@ Last login: Tue May 10 12:05:29 2022 from 10.10.14.41
 daniel@pandora:~$ 
 ```
 # User Flag
-### Found out that the useflag.txt is in matt's directory
+### Found out that the userflag.txt is in matt's directory
 ```
 daniel@pandora:/home$ ls -a
 .  ..  daniel  matt
@@ -123,24 +123,27 @@ drwxr-xr-x  3 matt matt 4.0K Dec  7 14:32 pandora
 ```
 ## ETC/HOSTS
 ### from this we can know that pandora is running on localhost
-daniel@pandora:/var/www/pandora$ cat /etc/hosts
+```
+aniel@pandora:/var/www/pandora$ cat /etc/hosts
 127.0.0.1 localhost.localdomain pandora.htb pandora.pandora.htb
 127.0.1.1 pandora
-
+```
 ## The following lines are desirable for IPv6 capable hosts
+```
 ::1     ip6-localhost ip6-loopback
 fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-
+```
 ## Forwarding ssh to localhost to access pandora
+```
 ┌──(x4k5h4yx💀Kali)-[~]
 └─$ ssh -D 8080 -C -N daniel@10.10.11.136
 daniel@10.10.11.136's password:
-
+```
 ## Visiting to 127.0.0.1 
-### after changing the proxy and port to 12.0.0.1 and 8080 with type socks5.Got the pandora console login page. This version has many vulnerabilities
+### use foxyproxy and change the proxy and port to 12.0.0.1 and 8080 with type socks5.Got the pandora console login page. This version has many vulnerabilities
 
 ## SQL Injection
 ```
@@ -293,8 +296,8 @@ Last login: Fri May 13 14:26:04 2022 from 10.10.14.74
 matt@pandora:~$
 
 ```
-## priv escalation
-### i found that vulnerability is in TAR and /usr/bin/pandora_backup
+## Privilege Escalation
+### I found that vulnerability is TAR and /usr/bin/pandora_backup after downloading it and testing it
 ```
 matt@pandora:~$ /usr/bin/pandora_backup
 PandoraFMS Backup Utility
@@ -362,8 +365,8 @@ root@pandora:/root# ls
 root.txt
 root@pandora:/root# cat root.txt
 ```
+</br>
 
-
-
+Thank YOU <3
 
 
